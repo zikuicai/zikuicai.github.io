@@ -7,5 +7,3 @@
 #
 layout: home
 ---
-
-hello _there_
