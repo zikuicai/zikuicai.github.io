@@ -2,4 +2,4 @@ title: Welcome!
 description: Zikui Cai's Home Page
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-cayman 
+theme: #jekyll-theme-cayman 
