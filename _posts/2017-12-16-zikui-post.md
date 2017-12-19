@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Note"
+title: "Note about this site"
 ---
 ## Home Page
 Home page is in `index.md` . Don't need to change. Layout helps put blogs on the home page.
