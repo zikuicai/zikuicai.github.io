@@ -18,3 +18,5 @@ Then, I installed
 * matplotlib
 * tensorflow
 * jupyter notebook
+
+python is preinstalled in `/usr/bin`
