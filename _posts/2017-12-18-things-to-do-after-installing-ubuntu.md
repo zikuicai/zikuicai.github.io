@@ -3,7 +3,7 @@ layout: post
 title: Things to do after installing Ubuntu
 ---
 
-After changing the HDD to SSD, I decided to use **Linux** instead of **Windows**. I made a bootable Ubuntu USB stick by following this [tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0).
+After changing the HDD to SSD in my laptop, I decided to use **Linux** instead of **Windows** as my operating system. I made a bootable Ubuntu USB stick by following this [tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0).
 
 ## Python
 In ubuntu 16.04 LTS, python 2.7 and python 3.5 are preinstalled, I only need to install pip3 and upgrade it:
@@ -19,4 +19,4 @@ Then, I installed
 * tensorflow
 * jupyter notebook
 
-python is preinstalled in `/usr/bin`
+Don't forget to install Pycharm and use the preinstalled interpreter `python3.5` located in `/usr/bin`
