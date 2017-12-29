@@ -19,4 +19,4 @@ Then, I installed
 * tensorflow
 * jupyter notebook
 
-Don't forget to install Pycharm and use the preinstalled interpreter `python3.5` located in `/usr/bin`
+I installed a powerful python IDE **Pycharm** and used the preinstalled interpreter `python3.5` which was located in `/usr/bin`
