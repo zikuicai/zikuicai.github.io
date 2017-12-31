@@ -5,17 +5,17 @@ title: Backpropagation
 
 Things to do before 1.1.2018:
 
-* Understand Backpropagation
+> Understand Backpropagation
 
 Done 12.30.2017
 
-* Visualize the learning process
+> Visualize the learning process
 
 To be continued
 
 # Backpropagation
 ---
-Backpropagation _(reverse-mode differentiation)_ is an algorithm that calculates deratives to update weights and biases in a neural network. Actually, it is the best (or only?) way to learn the optimal weights and biases in a neural network model. Just recapping the feed forward process, one data is input into the randomly initialized model, after the forward-propagation of one layer after another, we get a final output and the difference between it and the desired output is represented as an error. Our goal is to reduce the error of the output layer, and in doing so, we need to reduce the error of every former layer. So, backpropagation comes to rescue.
+Backpropagation _(reverse-mode differentiation)_ is an algorithm that calculates deratives to update weights and biases in a neural network. Actually, it is the best (or only?) way to learn the optimal weights and biases in a neural network model. Just recapping the feed forward process, one data is input into the randomly initialized model, after the forward-propagation of one layer after another, we get a final output and the difference between it and the desired output is represented as an error. Our goal is to reduce the error of the output layer, and in doing so, biaswe need to reduce the error of every former layer. So, backpropagation comes to rescue.
 
 In Christopher Olah's blog [**Calculus on Computational Graphs: Backpropagation**](https://colah.github.io/posts/2015-08-Backprop/), he used computational graphs clearly explained: 
 
@@ -27,6 +27,15 @@ Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works
 
 ![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
 
+BP1 is to compute the error in the output layer
+
+BP2 is to compute the error in the hidden layer
+
+BP3 is to compute the rate of change of the cost with respect to any bias in the network
+
+BP4 is to compute the rate of change of the cost with respect to any weight in the network
+
+Here is the python code:
 ```python
 class Network(object):
 ...
@@ -47,10 +56,15 @@ class Network(object):
             activation = sigmoid(z)
             activations.append(activation)
         # backward pass
-        delta = self.cost_derivative(activations[-1], y) * \
-            sigmoid_prime(zs[-1])
+        """ BP1 """
+        delta = self.cost_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
+        
+        """ BP3 """
         nabla_b[-1] = delta
+        
+        """ BP4 """
         nabla_w[-1] = np.dot(delta, activations[-2].transpose())
+        
         # Note that the variable l in the loop below is used a little
         # differently to the notation in Chapter 2 of the book.  Here,
         # l = 1 means the last layer of neurons, l = 2 is the
@@ -60,9 +74,16 @@ class Network(object):
         for l in xrange(2, self.num_layers):
             z = zs[-l]
             sp = sigmoid_prime(z)
+            
+            """ BP2 """
             delta = np.dot(self.weights[-l+1].transpose(), delta) * sp
+            
+            """ BP3 """
             nabla_b[-l] = delta
+            
+            """ BP4 """
             nabla_w[-l] = np.dot(delta, activations[-l-1].transpose())
+            
         return (nabla_b, nabla_w)
 ...
 ```
