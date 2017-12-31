@@ -9,6 +9,10 @@ Things to do before 1.1.2018:
 
 Done 12.30.2017
 
+> Momentum
+
+To be continued
+
 > Visualize the learning process
 
 To be continued
@@ -89,7 +93,6 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
         return (nabla_b, nabla_w)
 ...
 ```
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=6s)
 
 <a href="https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=6s" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
