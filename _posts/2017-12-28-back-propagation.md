@@ -27,8 +27,10 @@ In Christopher Olah's blog [**Calculus on Computational Graphs: Backpropagation*
 
 * Why backprop is a fast algorithm ? Because `Forward-mode differentiation gave us the derivative of our output with respect to a single input, but reverse-mode differentiation gives us all of them`.
 
-Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works**](http://neuralnetworksanddeeplearning.com/chap2.html) in explaining backpropagation with both theory and real python code. In his chapter, he explained backpropagation wtih 4 equations:
+Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works**](http://neuralnetworksanddeeplearning.com/chap2.html) in explaining backpropagation with both theory and real python code. In his chapter, he explained backpropagation wtih 4 equations and with the proof.
 
+Here are the equations:
+---
 ![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
 
 BP1 is to compute the error in the output layer
@@ -40,6 +42,7 @@ BP3 is to compute the rate of change of the cost with respect to any bias in the
 BP4 is to compute the rate of change of the cost with respect to any weight in the network
 
 Here is the python code:
+---
 ```python
 class Network(object):
 ...
@@ -59,9 +62,7 @@ class Network(object):
             zs.append(z)
             activation = sigmoid(z)
             activations.append(activation)
-        # backward pass<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+        # backward pass
         """ BP1 """
         delta = self.cost_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
         
@@ -93,5 +94,6 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
         return (nabla_b, nabla_w)
 ...
 ```
-
-<div align="center"><iframe width="806" height="453" src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+Here is a video explaining backpropagation:
+---
+<div align="center"><iframe width="820" height="460" src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
