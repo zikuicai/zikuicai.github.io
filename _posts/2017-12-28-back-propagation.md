@@ -5,11 +5,11 @@ title: Backpropagation
 
 Things to do before 1.1.2018:
 
-1. understand Backpropagation
+* Understand Backpropagation
 
 Done 12.30.2017
 
-2. visualize the learning process
+* Visualize the learning process
 
 To be continued
 
@@ -24,6 +24,7 @@ In Christopher Olah's blog [**Calculus on Computational Graphs: Backpropagation*
 * Why backprop is a fast algorithm ? Because `Forward-mode differentiation gave us the derivative of our output with respect to a single input, but reverse-mode differentiation gives us all of them`.
 
 Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works**](http://neuralnetworksanddeeplearning.com/chap2.html) in explaining backpropagation with both theory and real python code. In his chapter, he explained backpropagation wtih 4 equations:
+
 ![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
 
 ```python
