@@ -5,15 +5,17 @@ title: Backpropagation
 
 Things to do before 1.1.2018:
 
-> Understand Backpropagation
+$\{ x_i \}$
 
-Done 12.30.2017
+> - [x] Understand Backpropagation
 
-> Momentum
+Done 12.30.2017 :smiley:
+
+> - [ ] Momentum
 
 To be continued
 
-> Visualize the learning process
+> - [ ] Visualize the learning process
 
 To be continued
 
@@ -43,8 +45,10 @@ BP3 is to compute the rate of change of the cost with respect to any bias in the
 BP4 is to compute the rate of change of the cost with respect to any weight in the network
 
 Suppose we have n layers, we use 5 steps to explain the learning process:
+
 STEP 1: Use BP1 to get the error of the output layer which (nth)
-STEP 2: Use BP3 to 
+
+STEP 2: Use BP3 to get delta
 
 Here is the python code:
 ---
@@ -106,11 +110,12 @@ Here is a video explaining backpropagation:
 
 <div align="center"><iframe width="820" height="460" src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
 
+In trask's post[A Neural Network in 11 lines of Python](http://iamtrask.github.io/2015/07/12/basic-python-network/):
 
 ```python
 import numpy as np
 
-# sigmoid function
+# sigmoid function and its derivative
 def nonlin(x,deriv=False):
     if(deriv==True):
         return x*(1-x)
