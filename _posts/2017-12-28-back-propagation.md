@@ -45,6 +45,7 @@ BP4 is to compute the rate of change of the cost with respect to any weight in t
 Suppose we have n layers, we use 5 steps to explain the learning process:
 STEP 1: Use BP1 to get the error of the output layer which (nth)
 STEP 2: Use BP3 to 
+
 Here is the python code:
 ---
 
@@ -99,6 +100,7 @@ class Network(object):
         return (nabla_b, nabla_w)
 ...
 ```
+
 Here is a video explaining backpropagation:
 ---
 
@@ -130,7 +132,7 @@ np.random.seed(1)
 # initialize weights randomly with mean 0
 syn0 = 2*np.random.random((3,1)) - 1
 
-for iter in xrange(10000):
+for iter in range(10000):
 
     # forward propagation
     l0 = X
@@ -146,8 +148,8 @@ for iter in xrange(10000):
     # update weights
     syn0 += np.dot(l0.T,l1_delta)
 
-print "Output After Training:"
-print l1
+print("Output After Training:")
+print(l1)
 ```
 
 When the model can't classify the dataset, we add a layer to the model:
@@ -177,7 +179,7 @@ np.random.seed(1)
 syn0 = 2*np.random.random((3,4)) - 1
 syn1 = 2*np.random.random((4,1)) - 1
 
-for j in xrange(60000):
+for j in range(60000):
 
 	# Feed forward through layers 0, 1, and 2
     l0 = X
@@ -188,7 +190,7 @@ for j in xrange(60000):
     l2_error = y - l2
     
     if (j% 10000) == 0:
-        print "Error:" + str(np.mean(np.abs(l2_error)))
+        print("Error:" + str(np.mean(np.abs(l2_error))))
         
     # in what direction is the target value?
     # were we really sure? if so, don't change too much.
