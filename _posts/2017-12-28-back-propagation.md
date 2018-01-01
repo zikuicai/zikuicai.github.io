@@ -4,21 +4,21 @@ title: Backpropagation
 ---
 
 
-$$\{ x_i \}$$
+
 
 $$a^2 + b^2 = c^2$$
 
 Things to do before 1.1.2018:
 
-> - [x] Understand Backpropagation
+- [x] Understand Backpropagation
 
 Done 12.30.2017 :smiley:
 
-> - [ ] Momentum
+- [ ] Momentum
 
 To be continued
 
-> - [ ] Visualize the learning process
+- [ ] Visualize the learning process
 
 To be continued
 
@@ -38,6 +38,10 @@ Here are the equations:
 ---
 
 ![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
+
+\begin{eqnarray} 
+  \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j).
+\tag{BP1}\end{eqnarray}
 
 BP1 is to compute the error in the output layer
 
