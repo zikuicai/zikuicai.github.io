@@ -5,7 +5,9 @@ title: Backpropagation
 
 Things to do before 1.1.2018:
 
-$\{ x_i \}$
+$$\{ x_i \}$$
+
+$$a^2 + b^2 = c^2$$
 
 > - [x] Understand Backpropagation
 
