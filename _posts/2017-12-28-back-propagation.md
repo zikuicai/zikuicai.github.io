@@ -5,7 +5,7 @@ title: Backpropagation
 
 Things to do before 1.1.2018:
 
-- [x] Understand Backpropagation
+ - [x] Understand Backpropagation
 
 Done 12.30.2017 :smiley:
 
