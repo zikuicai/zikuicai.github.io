@@ -35,24 +35,23 @@ Here are the equations:
 ![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
 
 \begin{eqnarray} 
-  \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j).
+  \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j)
 \tag{BP1}\end{eqnarray}
 
 \begin{eqnarray} 
-  \delta^L = \nabla_a C \odot \sigma'(z^L).
+  \delta^L = \nabla_a C \odot \sigma'(z^L)
 \tag{BP1a}\end{eqnarray}
 
 \begin{eqnarray} 
-  \delta^l = ((w^{l+1})^T \delta^{l+1}) \odot \sigma'(z^l),
+  \delta^l = ((w^{l+1})^T \delta^{l+1}) \odot \sigma'(z^l)
 \tag{BP2}\end{eqnarray}
 
-\begin{eqnarray}  \frac{\partial C}{\partial b^l_j} =
-  \delta^l_j.
+\begin{eqnarray}  
+\frac{\partial C}{\partial b^l_j} = \delta^l_j
 \tag{BP3}\end{eqnarray}
 
 \begin{eqnarray}
-  
-  \frac{\partial C}{\partial w^l_{jk}} = a^{l-1}_k \delta^l_j.
+  \frac{\partial C}{\partial w^l_{jk}} = a^{l-1}_k \delta^l_j
 \tag{BP4}\end{eqnarray}
 
 BP1 is to compute the error in the output layer
