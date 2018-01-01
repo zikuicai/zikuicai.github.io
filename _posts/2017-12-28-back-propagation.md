@@ -3,11 +3,12 @@ layout: post
 title: Backpropagation
 ---
 
-Things to do before 1.1.2018:
 
 $$\{ x_i \}$$
 
 $$a^2 + b^2 = c^2$$
+
+Things to do before 1.1.2018:
 
 > - [x] Understand Backpropagation
 
