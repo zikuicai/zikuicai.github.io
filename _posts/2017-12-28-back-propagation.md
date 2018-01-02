@@ -31,7 +31,7 @@ Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works
 Here are the equations:
 ---
 
-![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
+> Premise: We define the error $$\delta^l_j$$ of neuron $$j$$ in layer $$l$$ by $$\delta^l_j \equiv \frac{\partial C}{\partial z^l_j}$$
 
 \begin{eqnarray} 
   \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) \rightarrow \delta^L = \nabla_a C \odot \sigma'(z^L)
@@ -96,10 +96,6 @@ class Network(object):
         # backward pass
         """ BP1 """
         delta = self.cost_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
-        
-	\begin{eqnarray} 
-  		\delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) \rightarrow \delta^L = \nabla_a C \odot \sigma'(z^L)
-	\tag{BP1}\end{eqnarray}
 	
         """ BP3 """
         nabla_b[-1] = delta
