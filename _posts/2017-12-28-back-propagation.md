@@ -31,7 +31,7 @@ Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works
 Here are the equations:
 ---
 
-> Premise: We define the error $$\delta^l_j$$ of neuron $$j$$ in layer $$l$$ by   $$\delta^l_j \equiv \frac{\partial C}{\partial z^l_j}$$
+> Premise: Motivated by the story demon, we define the error $$\delta^l_j$$ of neuron $$j$$ in layer $$l$$ by $$\delta^l_j \equiv \frac{\partial C}{\partial z^l_j}$$. Backpropagation will give us a procedure to compute the error $$\delta^l_j$$, and then will relate $$\delta^l_j$$ to $$\frac{\partial C}{\partial w^l_{jk}}$$ and $$\frac{\partial C}{\partial b^l_j}$$.
 
 \begin{eqnarray} 
   \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) \rightarrow \delta^L = \nabla_a C \odot \sigma'(z^L)
