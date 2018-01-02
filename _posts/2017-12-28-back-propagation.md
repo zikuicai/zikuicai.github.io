@@ -63,13 +63,13 @@ BP4 is to compute the rate of change of the cost with respect to any weight in t
 
 Suppose we have n layers, we use 5 steps to explain the learning process:
 
-STEP 1: Use BP1 to get the error of the output layer which ($$ \mathbf{(n)}\_{th}$$)
+STEP 1: Use BP1 to get the error of the output layer which is $$n_th$$ layer
 
 STEP 2: Use BP3 to get $$\nabla w$$
 
 STEP 3: Use BP4 to get $$\nabla b$$
 
-STEP 4: Use BP2 to get the error of $$ \mathbf{(n-1)}\_{th}$$ layer
+STEP 4: Use BP2 to get the error of $$(n-1)_th$$ layer
 
 STEP 5: Return to STEP 2
 
