@@ -31,7 +31,7 @@ Michael Nielsen wrote a great chapter [**How the backpropagation algorithm works
 Here are the equations:
 ---
 
-> Premise: We define the error $$\delta^l_j$$ of neuron $$j$$ in layer $$l$$ by $$\delta^l_j \equiv \frac{\partial C}{\partial z^l_j}$$
+> Premise: We define the error $$\delta^l_j$$ of neuron $$j$$ in layer $$l$$ by   $$\delta^l_j \equiv \frac{\partial C}{\partial z^l_j}$$
 
 \begin{eqnarray} 
   \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) \rightarrow \delta^L = \nabla_a C \odot \sigma'(z^L)
@@ -61,9 +61,9 @@ Suppose we have n layers, we use 5 steps to explain the learning process:
 
 STEP 1: Use BP1 to get $$\delta$$ of the output layer which is the $$n_{th}$$ layer
 
-STEP 2: Use BP3 to get $$\nabla w$$, then update $$w \rightarrow w'= w-\eta \nabla C$$
+STEP 2: Use BP3 to get $$\nabla C = \frac{{\partial C}{\partial w}}$$, then update $$w \rightarrow w'= w-\eta \nabla C$$
 
-STEP 3: Use BP4 to get $$\nabla b$$
+STEP 3: Use BP4 to get $$\nabla C = \frac{{\parital C}{\partial b}}$$, then update $$b \rightarrow b'= b-\eta \nabla C$$
 
 STEP 4: Use BP2 to get $$\delta$$ of the $$(n-1)_{th}$$ layer
 
