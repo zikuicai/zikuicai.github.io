@@ -6,7 +6,7 @@ title: Backpropagation
 Things to do before 1.1.2018:
 > Understand Backpropagation
 
-Done 12.30.2017 :smiley:
+Done 12.30.2017
 
 > Momentum
 
@@ -34,12 +34,8 @@ Here are the equations:
 ![The four fundamental equations behind backpropagation](http://neuralnetworksanddeeplearning.com/images/tikz21.png)
 
 \begin{eqnarray} 
-  \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j)
+  \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) \rightarrow \delta^L = \nabla_a C \odot \sigma'(z^L)
 \tag{BP1}\end{eqnarray}
-
-\begin{eqnarray} 
-  \delta^L = \nabla_a C \odot \sigma'(z^L)
-\tag{BP1a}\end{eqnarray}
 
 \begin{eqnarray} 
   \delta^l = ((w^{l+1})^T \delta^{l+1}) \odot \sigma'(z^l)
@@ -63,13 +59,13 @@ BP4 is to compute the rate of change of the cost with respect to any weight in t
 
 Suppose we have n layers, we use 5 steps to explain the learning process:
 
-STEP 1: Use BP1 to get the error of the output layer which is $$n_{th}$$ layer
+STEP 1: Use BP1 to get $$\delta$$ of the output layer which is the $$n_{th}$$ layer
 
-STEP 2: Use BP3 to get $$\nabla w$$
+STEP 2: Use BP3 to get $$\nabla w$$, then update $$w \rightarrow w'= w-\eta \nabla C$$
 
 STEP 3: Use BP4 to get $$\nabla b$$
 
-STEP 4: Use BP2 to get the error of $$(n-1)_{th}$$ layer
+STEP 4: Use BP2 to get $$\delta$$ of the $$(n-1)_{th}$$ layer
 
 STEP 5: Return to STEP 2
 
