@@ -4,16 +4,15 @@ title: Backpropagation
 ---
 
 Things to do before 1.1.2018:
-
- - [x] Understand Backpropagation
+> Understand Backpropagation
 
 Done 12.30.2017 :smiley:
 
-- [ ] Momentum
+> Momentum
 
 To be continued
 
-- [ ] Visualize the learning process
+> Visualize the learning process
 
 To be continued
 
@@ -66,7 +65,15 @@ Suppose we have n layers, we use 5 steps to explain the learning process:
 
 STEP 1: Use BP1 to get the error of the output layer which (nth)
 
-STEP 2: Use BP3 to get delta
+STEP 2: Use BP3 to get \nabla w
+
+STEP 3: Use BP4 to get \nabla b
+
+STEP 4: Use BP2 to get the error of (n-1)th layer
+
+STEP 5: Return to STEP 2
+
+
 
 Here is the python code:
 ---
