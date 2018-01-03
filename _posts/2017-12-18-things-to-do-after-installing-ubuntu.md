@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Things to do after installing Ubuntu
+title: After installing Ubuntu
 ---
 
 After changing the HDD to SSD in my laptop, I decided to use **Linux** instead of **Windows** as my operating system. I made a bootable Ubuntu USB stick by following this [tutorial](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0).
