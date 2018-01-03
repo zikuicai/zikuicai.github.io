@@ -5,7 +5,7 @@ title: Markdown & Latex
 
 Seeing Michael Nielsen's chapters with math formulas embeded in, I wanted to put latex math in my posts. Because I used Jekyll as my webpage engine, I followed this post [MathJax with Jekyll](http://www.gastonsanchez.com/visually-enforced/opinion/2014/02/16/Mathjax-with-jekyll/) to set up my environment.
 
-There is one thing worth paying attention. After I added this line :`markdown: redcarpet` to my _config.yml file, I received an e-mail with a (link)[https://help.github.com/articles/updating-your-markdown-processor-to-kramdown/] telling me Github no longer supports ~~`redcarpet`~~ as its markdown praser so we need to set `kramdown` as the new markdown processor.
+There is one thing worth paying attention. After I added this line :`markdown: redcarpet` to my *_config.yml* file, I received an e-mail with a [link](https://help.github.com/articles/updating-your-markdown-processor-to-kramdown/) telling me Github no longer supports ~~`redcarpet`~~ as its markdown praser so we need to set `kramdown` as the new markdown processor.
 
 
 [kramdown](https://kramdown.gettalong.org/)
