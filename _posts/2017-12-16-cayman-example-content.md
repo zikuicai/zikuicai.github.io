@@ -8,6 +8,10 @@ author: "Bart Simpson"
 meta: "Springfield"
 ---
 
+This is intended as a quick reference and showcase of [Markdown](https://daringfireball.net/projects/markdown/) language.
+
+Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+
 # [](#header-1)Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
@@ -148,13 +152,13 @@ end
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>A</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>B</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
+<dd>C</dd>
 <dt>Color</dt>
-<dd>Green</dd>
+<dd>D</dd>
 </dl>
 
 ```
