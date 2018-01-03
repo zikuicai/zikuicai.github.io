@@ -7,11 +7,13 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 ---
+## Customizing
+---
 
 ### Home Page
 Home page is in `index.md` . Don't need to change. Layout helps put blogs on the home page.
 
-### Layout
+### Layouts
 Layouts are in `_layouts` folder and there are 4 types to choose from.
 
 |layout|description|
@@ -23,6 +25,25 @@ Layouts are in `_layouts` folder and there are 4 types to choose from.
 
 ### Posts
 Posts are in `_posts` folder. Add post in it with the date as name.
+
+---
+### Stylesheet
+
+If to change the **style** of this site,
+
+change the content of *zikuicai.github.io/assets/css/style.scss* `@import 'jekyll-theme-cayman';` to the other .scss file such as `scss @import 'jekyll-theme-cayman-blog';` you have in *zikuicai.github.io/_sass/*. After changing the above setting, you will see a big improvement on the looking.
+
+If to change the **color** specifically of this site,
+
+change the content of *zikuicai.github.io/_sass/variables.scss*, for instance:
+
+```scss
+// Headers
+$header-heading-color: #fff !default;
+$header-bg-color: #159957 !default;
+$header-bg-color-secondary: #155799 !default;
+```
+`$header-bg-color` is the right-most color of the header bar and `$header-bg-color-secondary` is the color of the left-most part. The color is the gradients in between. There are some good sites [*Mathematically derived gradient explorer*](http://jxnblk.com/shade/?base=%233DC8FF&hueShift=150&saturate=0.68&lighten=-0.23) and [*Color Gradients*](https://uigradients.com/#Summer),[*Color Hex Color Codes*](http://www.color-hex.com/)for colors.
 
 ---
 Jekyll also offers powerful support for code snippets:
