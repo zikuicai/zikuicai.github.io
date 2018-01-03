@@ -43,7 +43,10 @@ $header-heading-color: #fff !default;
 $header-bg-color: #159957 !default;
 $header-bg-color-secondary: #155799 !default;
 ```
-`$header-bg-color` is the right-most color of the header bar and `$header-bg-color-secondary` is the color of the left-most part. The color is the gradients in between. There are some good sites [*Mathematically derived gradient explorer*](http://jxnblk.com/shade/?base=%233DC8FF&hueShift=150&saturate=0.68&lighten=-0.23) and [*Color Gradients*](https://uigradients.com/#Summer),[*Color Hex Color Codes*](http://www.color-hex.com/)for colors.
+`$header-bg-color` is the right-most color of the header bar and `$header-bg-color-secondary` is the color of the left-most part. The color is the gradients in between. There are some good sites [*Mathematically derived gradient explorer*](http://jxnblk.com/shade/?base=%233DC8FF&hueShift=150&saturate=0.68&lighten=-0.23) , [*Color Gradients*](https://uigradients.com/#Summer) and [*Color Hex Color Codes*](http://www.color-hex.com/)for colors.
+
+
+Check his [site](https://github.com/CodeLabora/codelabora.github.io) for some information.
 
 ---
 Jekyll also offers powerful support for code snippets:
