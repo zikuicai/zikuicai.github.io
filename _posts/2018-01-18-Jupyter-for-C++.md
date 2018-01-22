@@ -5,3 +5,9 @@ It's a lot of fun playing with Jupyter Notebook. xeus makes C++ interactive as P
 [Jupyter Kernel for C++ based on xeus and cling](https://github.com/QuantStack/xeus-cling)
 
 [C++ implementation of the Jupyter kernel protocol](https://github.com/QuantStack/xeus)
+
+```bash
+source activate cling
+jupyter notebook
+source deactivate
+```
