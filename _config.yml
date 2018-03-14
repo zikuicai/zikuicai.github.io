@@ -1,6 +1,6 @@
 title: Welcome!
 description: I am zikui cai
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman 
 markdown: kramdown
