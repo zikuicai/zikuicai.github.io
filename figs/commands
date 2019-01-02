@@ -1,0 +1,6 @@
+convert "proj_dance.png" -resize 150x150 -quality 100 "proj_dance.png"
+
+convert "proj_dance.png" -resize 150x150\! -quality 100 "proj_dance.png"
+
+# ffmpeg -ss 00:00:03 -i 77.mp4 -to 8 -r 10 -vf scale=150:-1 ./autoscan.gif
+
