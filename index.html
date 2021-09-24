@@ -1,20 +1,12 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-7580334-2');
-  </script>
-
-  <title>Zikui Cai</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Galdeano" rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<html lang="en">
+  
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zikui Cai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Galdeano" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
 
   <body>
@@ -40,9 +32,8 @@
 
                                 <!-- <p align="center"> -->
                                 <p>
-                                  I am currently a Ph.D. student in ECE department at UC Riverside, with research interests in computer vision and machine learning.<br>
-                                  Some of the involved research projects include black-box attacks against object detectors, dynamic scene view synthesis and solving phase retrieval problems etc.
-                                  As a big fan of practical innovations, I am passionate about creating cutting-edge technologies and rendering accessible services.
+                                  I am a Ph.D. student in ECE department at UC Riverside. <br>
+                                  I do research in computer vision and machine learning.
                                 </p>
                                 
                                 <p align="center">
@@ -50,7 +41,7 @@
                                   &nbsp;/&nbsp;
                                   <a href="https://github.com/zikuicai" target="_blank"> GitHub </a>
                                   &nbsp;/&nbsp;
-                                  <a href="http://www.linkedin.com/in/zikui-cai/" target="_blank"> LinkedIn </a>
+                                  <a href="https://scholar.google.com/citations?user=-SrU69AAAAAJ&hl=en&oi=ao" target="_blank"> Google Scholar </a>
                                 </p>
                             </td>
                             <td width="30%">
@@ -61,37 +52,72 @@
                     </table>
 
 
-          <!--Project Starts-->
+          
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tr>
               <td>
-                <heading>Research</heading>
+                <heading>Publications</heading>
               </td> 
             </tr>
           </table>
 
-          <!-- 6 -->
+          <!-- paper 2021 ICCV-->
           <table width="100%" align="center" border="0" cellpadding="20">
             <tr>
               <td width="25%" valign="center">
-                <img src="figs/paper_eccv2020_sol.png" alt="deepfakes" width="250">
+                <img src="figs/yin2021exploiting.png" alt="fig" width="250">
               </td>
 
               <td width="75%" valign="top">
                 <p>
-                  <a href="https://arxiv.org/abs/2007.14621">
-                    <papertitle>Solving Phase Retrieval with a Learned Reference</papertitle>
-                  </a>
-                  <br> Rakib Hyder*, <strong>Zikui Cai*</strong> , M. Salman Asif
-                  <br> European Conference on Computer Vision (ECCV), 2020
-                </a>
-                  
-                  <p>
-                    Our proposed method for phase retrieval via unrolled network and learned reference provides near-perfect recovery at fixed (small) computational cost. 
-
-                  </p>
+                  <papertitle>Exploiting Multi-Object Relationships for Detecting Adversarial Attacks in Complex Scenes</papertitle>
+                  <br> Mingjun Yin, Shasha Li, <u>Zikui Cai</u>, Chengyu Song, M. Salman Asif, Amit K. Roy-Chowdhury, Srikanth V. Krishnamurthy
+                  <br> International Conference on Computer Vision (ICCV), 2021
+                  <br> <a href="https://arxiv.org/abs/2108.08421"> arXiv </a>
+                  <p> We developed a novel approach (SCENE-Lang) to perform model-agnostic context consistency checks using language models. </p>
                 </p>
               </td>
+              
+            </tr>
+          </table>
+
+          <!-- paper 2021 ICIP-->
+          <table width="100%" align="center" border="0" cellpadding="20">
+            <tr>
+              <td width="25%" valign="center">
+                <img src="figs/cai2021data.png" alt="fig" width="250">
+              </td>
+
+              <td width="75%" valign="top">
+                <p>
+                  <papertitle>Data-Driven Illumination Patterns For Coded Diffraction Imaging</papertitle>
+                  <br> <u>Zikui Cai</u>, Rakib Hyder, M. Salman Asif
+                  <br> IEEE International Conference on Image Processing (ICIP), 2021
+                  <br> <a href="https://ieeexplore.ieee.org/abstract/document/9506350"> paper </a>
+                  <p> We present a framework to optimize the sensing parameters to recover signals from coded diffraction patterns using alternating minimization-based phase retrieval method. </p>
+                </p>
+              </td>
+              
+            </tr>
+          </table>
+
+          <!-- paper 2020 ECCV -->
+          <table width="100%" align="center" border="0" cellpadding="20">
+            <tr>
+              <td width="25%" valign="center">
+                <img src="figs/hyder2020solving.png" alt="fig" width="250">
+              </td>
+
+              <td width="75%" valign="top">
+                <p>
+                  <papertitle>Solving Phase Retrieval with a Learned Reference</papertitle>
+                  <br> Rakib Hyder*, <u>Zikui Cai*</u> , M. Salman Asif
+                  <br> European Conference on Computer Vision (ECCV), 2020
+                  <br> <a href="https://arxiv.org/abs/2007.14621"> arXiv </a> &nbsp;/&nbsp; <a href="https://arxiv.org/abs/2007.14621"> code </a>
+                  <p> Our proposed method for phase retrieval via unrolled network and learned reference provides near-perfect recovery at fixed (small) computational cost. </p>
+                </p>
+              </td>
+
             </tr>
           </table>
 
@@ -113,15 +139,10 @@
 
               <td width="75%" valign="top">
                 <p>
-                  <a href="https://github.com/zikuicai/deepfakes">
-                    <papertitle>Deepfakes Image Generation</papertitle>
-                  </a>
-                  <br>
-                  <strong>Zikui Cai</strong> , Jiatai Chen, Taanya Gupta</a>
-                  <p>
-                    We performed deepfakes face image translation using a encoder-decoder structure. Trained a CycleGAN with face segmentation maps as guides.
-
-                  </p>
+                  <papertitle>Deepfakes Image Generation</papertitle>
+                  <br> with Jiatai Chen and Taanya Gupta
+                  <!-- <br> <a href="https://github.com/zikuicai/deepfakes"> code </a> -->
+                  <p>We performed deepfakes face image translation using a encoder-decoder structure. Trained a CycleGAN with face segmentation maps as guides.</p>
                 </p>
               </td>
             </tr>
@@ -136,13 +157,11 @@
 
               <td width="75%" valign="top">
                 <p>
-                  <a href="https://github.com/zikuicai/HandPoseEstimation">
-                    <papertitle>Hand Pose Estimation</papertitle>
-                  </a>
-                  <br>
-                  <strong>Zikui Cai</strong></a>
+                  <papertitle>Hand Pose Estimation</papertitle></a>
+                  <!-- <br><a href="https://github.com/zikuicai/HandPoseEstimation"> code </a> -->
+
                   <p>
-                    Developed an algorithm for real-time human 2D hand pose estimation. <br> 
+                    Developed an algorithm for real-time human 2D hand pose estimation.
                     Accelerated the postprocess by executing gaussian filtering operation in Keras model.
 
                   </p>
@@ -160,14 +179,13 @@
 
               <td width="75%" valign="top">
                 <p>
-                  <a href="https://github.com/Rivenlalala/StreetDanceRecognition">
-                    <papertitle>2D Skeleton-Based Dance Genre Recognition</papertitle>
-                  </a>
-                  <br>
-                  <strong>Zikui Cai</strong>, Ruiwen Zhao, Xiaodi Fan</a>
+                  <!-- <a href="https://github.com/Rivenlalala/StreetDanceRecognition"></a> -->
+                  <papertitle>2D Skeleton-Based Dance Genre Recognition</papertitle>
+                  
+                  <br>with Ruiwen Zhao and Xiaodi Fan
                   <p>
-                    Made a dataset by mining massive street dance videos from Youtube. <br>
-                    Classified videos using CNN & RNN based on extracted human body skeleton. <br>
+                    Made a dataset by mining massive street dance videos from Youtube. 
+                    Classified videos using CNN & RNN based on extracted human body skeleton. 
                     Generalized the prior arts to solve real life problems in 2D space.
                   </p>
                 </p>
@@ -184,16 +202,12 @@
 
               <td width="75%" valign="top">
                 <p>
-                  <a href="https://drive.google.com/open?id=1zV8Wbvy1sEgVlpxSkA9L55obyp2X7ZRxgN8-m0JF4K8">
-                    <papertitle>Human Pose Estimation</papertitle>
-                  </a>
-                  <br>
-                  <strong>Zikui Cai</strong>, Ruiwen Zhao</a>
+                  <!-- <a href="https://drive.google.com/open?id=1zV8Wbvy1sEgVlpxSkA9L55obyp2X7ZRxgN8-m0JF4K8"> --></a>
+                  <papertitle>Human Pose Estimation</papertitle>
+                  
+                  <br> with Ruiwen Zhao</a>
                   <p>
-                    Built an VGGNet based 2-branch multistage CNN model using Keras. <br>
-                    Trained and validated the model on COCO dataset and got a good result. <br>
-                    Compared this bottom-up method with other top-down methods.
-
+                    Built an VGGNet based 2-branch multistage CNN model using Keras. Trained and validated the model on COCO dataset and got a good result.
                   </p>
                 </p>
               </td>
@@ -209,11 +223,9 @@
 
               <td width="75%" valign="top">
                 <p>
-                  <a href="https://drive.google.com/open?id=1xesAvtPhNJ-XcRzJO5gUmk0bQaqMlOwI96AxWlh6y2I">
-                    <papertitle>Autonomous Vehicles</papertitle>
-                  </a>
-                  <br>
-                  <strong>Zikui Cai</strong>, Vu Tran</a>
+                  <!-- <a href="https://drive.google.com/open?id=1xesAvtPhNJ-XcRzJO5gUmk0bQaqMlOwI96AxWlh6y2I"></a> -->
+                  <papertitle>Autonomous Vehicles</papertitle>
+                  <br> with Vu Tran
                   <p>
                     We designed an autonomuous system where the vehicle can navigate itself under controlled settings. The vehicle is controlled using Raspberry Pi 3B and Arduino.
                     And the images are processed real-time using CNN models in OpenCV.
