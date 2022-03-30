@@ -3,8 +3,7 @@ a {
   text-decoration: none;
 }
 
-a:focus,
-a:hover {
+a:focus, a:hover {
   color: #f09228;
   text-decoration: none;
 }
@@ -19,19 +18,14 @@ a, author {
   font-size: 16px
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-}
-
 heading {
   font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 papertitle {
   font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600
 }
 
@@ -47,33 +41,7 @@ resource {
   font-weight: 600
 }
 
-/* my name */
 name {
   font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 35px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
 }
