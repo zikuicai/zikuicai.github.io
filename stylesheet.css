@@ -1,47 +1,87 @@
+
+/* The <a> tag defines a hyperlink */
 a {
-  color: #1772d0;
+  color: #1e6dc7;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #f09228;
+  color: #e6b736da;
   text-decoration: none;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a, author {
-  font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px
+/* The <tr> tag defines a row in an HTML table. */
+/* The <td> tag defines a standard data cell in an HTML table. */
+
+body, td, th, tr, p, a, author {
+  font-family: sans-serif, Verdana, Helvetica;
+  font-size: 15px
+}
+
+name {
+  font-family: fantasy, monospace, sans-serif, Verdana, Helvetica;
+  font-size: 56px;
+  font-weight: bold;
+  /* font-style: italic; */
+  color: #ceb266da;
 }
 
 heading {
-  font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: sans-serif, Verdana, Helvetica;
   font-size: 24px;
 }
 
 papertitle {
-  font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: sans-serif, Verdana, Helvetica;
   font-size: 16px;
-  font-weight: 600
+  font-weight: bold;
 }
 
 venue {
-  font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-style: italic
+  font-family: sans-serif, Verdana, Helvetica;
+  font-size: 15px;
+  font-style: italic;
+  color: #ca1313
 }
 
-resource {
-  font-family: Courier, Verdana, 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 600
+a.resource {
+  font-family: sans-serif, Courier, Verdana, Helvetica;
+  font-size: 15px;
 }
 
-name {
-  font-family: Verdana, 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 35px;
+
+/* for paper cells */
+div.paper {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 0.8em;
+  border: 0px solid #ddd;
+  background: #fff;
+  padding: 0.55em .8em 0.6em .8em;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  border-bottom-left-radius:10px; 
+  border-bottom-right-radius:10px;
+  line-height: 140%;
+  box-shadow: 3px 2px 3px #DFDFDF;
+}
+
+div.paper:hover {
+  background: #FFFDEE;
+  /* background: #ffefee6e; */
+}
+
+
+/* for bibtex */
+.bibref {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: none;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.pre-white-space {
+  white-space: pre-line;
+  color: #e6b736da;
 }
