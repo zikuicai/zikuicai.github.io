@@ -1,4 +1,12 @@
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
 /* The <a> tag defines a hyperlink */
 a {
   color: #1e6dc7;
@@ -64,6 +72,10 @@ div.paper {
   border-bottom-right-radius:10px;
   line-height: 140%;
   box-shadow: 3px 2px 3px #DFDFDF;
+  
+  max-width: 850px;
+  /* min-width: 600px; */
+  min-width: 550px;
 }
 
 div.paper:hover {
