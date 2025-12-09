@@ -6,162 +6,253 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Zikui Cai</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class='container'>
 
-  <div class='js-off-canvas-container c-off-canvas-container'>
-    
-    <header class='c-header'>
-
-      <!-- <div class='o-grid'> -->
-        <div class='o-grid__col o-grid__col--full'>
-          <div class='c-header__inner'>
-
-            <div class='o-grid'>
-              <div class='o-grid__col o-grid__col--1-4-s'>
-                <div class='c-logo u-text-left'>
-                  <a class='c-logo__link' href='index.html'>Zikui Cai</a>
-                </div>
-              </div>
-
-              <div class='o-grid__col o-grid__col--1-4-s'>
-                <div class='c-logo u-text-right'>
-                  <a href='publications.html'> Publications </a>
-                </div>
-              </div>
-
-              <div class='o-grid__col o-grid__col--1-4-s'>
-                <div class='c-logo u-text-right'>
-                  <a href='service.html'> Service </a>
-                </div>
-              </div>
-
-              <div class='o-grid__col o-grid__col--1-4-s'>
-                <div class='c-logo u-text-right'>
-                  <a href='awards.html'> Awards </a>
-                </div>
-              </div>
-
-
-            </div>
-
-          </div>
-        </div>
-      <!-- </div> -->
-
+    <header class='header'>
+      <h1 class='name'>Zikui Cai</h1>
     </header>
 
-    <div class='o-wrapper'>
+    <main class='main-content'>
 
-      <div class='o-grid'>
-        <div class='o-grid__col'>
+      <section class='about-section'>
+        <div class='profile-wrapper'>
+          <div class='profile-column'>
+            <img src='figs/selfie.jpeg' class='profile-image' alt='Zikui Cai' width="180">
 
-            <div class='c-content'>
-              
-              <!-- <img src='figs/selfie_circle.png' class='c-post__image' alt=' ' width="180"> -->
-              <img src='figs/selfie.jpeg' class='c-post__image' alt=' ' width="180">
-
-              <p>
-                  I am a postdoctoral associate at <a href="https://umd.edu/">University of Maryland, College Park</a> working with <a href="https://furong-huang.com/">Furong Huang</a>  and <a href="https://www.cs.umd.edu/~tomg/">Tom Goldstein</a>.
-                  I obtained my Ph.D. from <a href="https://www.ece.ucr.edu/">Electrical and Computer Engineering</a> at the <a href="https://www.ucr.edu/">University of California, Riverside</a>, under the guidance of <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>. 
-                  Originally from Wuhan, the "River City" of China, I completed my B.S. in Automation at <a href="http://english.whut.edu.cn/">Wuhan University of Technology</a>.
-                  
-                  <br><br>
-                  My research focuses on trustworthy machine learning, where I strive to identify vulnerabilities / limitations and enhance the trustworthiness (robustness, safety, privacy, and more) of machine learning systems. 
-                  Besides model level trustworthiness, I also build embodied and agentic systems that can reason, act, and adapt responsibly inside the physical environment.
-                  
-                  <br><br>
-                  Current interests:
-                  <ul>
-                    <li> Multi-modal reasoning across vision, language, and action [ <a href="https://morse-500.github.io/">MORSE-500</a> ] </li>
-                    <li> Building AI agents that plan, act, and self-improve </li>
-                    <li> Embodied AI for navigation and manipulation in robotics</li>
-                    <li> Agentic safety and alignment in multi-agent ecosystems [ <a href="https://arxiv.org/abs/2504.20965">AegisLLM</a> ] </li> 
-                    <li> Controllable and safe AI via model editing and unlearning [ <a href="https://github.com/CSIPlab/SLUG">SLUG</a>, <a href="https://arxiv.org/abs/2502.05209">Robust Eval</a> ] </li> 
-                  </ul>
-
-                  Previous experience:
-                  <ul>
-                    <li> Exposing model vulnerabilities via efficient blackbox attacks [ <a href="https://arxiv.org/abs/2208.03610">BASES</a>, <a href="https://arxiv.org/abs/2303.14304">EBAD</a>, <a href="https://arxiv.org/abs/2112.03223">Context-Aware-Attacks</a>, <a href="https://arxiv.org/abs/2203.15230">ZQA</a> ]</li>
-                    <li> Detecting adversarial attacks using language models [ <a href="https://arxiv.org/abs/2108.08421">SCENE-Lang</a> ] </li>
-                    <li> Enhancing user privacy via de-identification while preserving utility [ <a href="https://arxiv.org/abs/2303.13269">Disguise</a> ] </li>
-                    <li> Improving physical modeling via end-to-end optimization [ <a href="https://arxiv.org/abs/2007.14621">Learn PR</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9506350">Learn CDI</a> ] </li>
-                  </ul>
-
-                  In the past, I was fortunate to have interned at <a href="https://www.uii-ai.com/en">UII America</a> (Summer 2022 in Cambridge, MA), working with <a href="https://planche.me/">Benjamin Planche</a> and <a href="http://wuziyan.com/">Ziyan Wu</a>; and at <a href="https://www.parc.com/">PARC</a> (Summer 2021 in Palo Alto, CA) working with <a href="https://shantanudrane.github.io/">Shantanu Rane</a>. 
-              </p>
-              
-              <p>
-                <strong>News</strong>
-                <ul>
-                  <li>[Jun. 2025] Our paper on <a href="https://arxiv.org/abs/2505.22664">Efficient Training for VLM</a> has been accepted to ICCV 2025 @ Honolulu.</li>
-                  <li>[Jun. 2025] Our paper on <a href="https://arxiv.org/abs/2502.05209">Model Tampering Attack for Robust Evaluation</a> has been accepted to TMLR.</li>
-                  <li>[May 2025] Our paper SLUG on <a href="https://arxiv.org/abs/2407.11867">Efficient Unlearning</a> has been accepted to ICML 2025 @ Vancouver.</li>
-                  <li>[Mar. 2025] Our paper AegisLLM on <a href="https://arxiv.org/abs/2504.20965">Agentic System for Safety</a> has been accepted to ICLR 2025 BuildingTrust @ Singapore.</li>
-                  <li>[Oct. 2024] Our papers on <a href="https://arxiv.org/abs/2407.11867">Efficient</a> and <a href="https://arxiv.org/abs/2502.05209">Robust</a> Unlearning are accepted to NeurIPS 2024 SafeGenAI @ Vancouver.</li>
-                  <li>[Sept. 2024] Our paper on <a href="https://arxiv.org/abs/2406.02575">Cross-modality Safety Alignment</a> is accepted to EMNLP 2024 @ Miami.</li>
-                  <li>[Jul. 2024] Excited to join UMD <a href="https://www.umiacs.umd.edu/">UMIACS</a> as a postdoc, working on <a href="https://www.umiacs.umd.edu/about-us/news/umiacs-team-part-28m-darpa-award-advance-autonomous-robotics">Advanced Autonomous Robotics</a>.</li>
-                  <li>[Dec 2023] Our paper on <a href="https://arxiv.org/abs/2303.13269">Face De-identification</a> is accepted to AAAI 2024 @ Vancouver. </li>
-                  <li>[May 2023] Acknowledged as <a href="https://cvpr.thecvf.com/Conferences/2023/OutstandingReviewers">CVPR 2023 Outstanding Reviewer</a> . </li>
-                  <li>[May 2023] Recognized as Outstanding Teaching Assistant by ECE Graduate Division for 2023. </li>
-                  <li>[Apr. 2023] Received Dissertation Year Program Fellowship 2023/2024. </li>
-                  <li>[Feb. 2023] Our paper <a href="https://arxiv.org/abs/2303.14304">EBAD</a> is accepted to CVPR 2023 @ Vancouver. </li>
-                  <li>[Feb. 2023] Received HEERF Dissertation Year Program Award 2022/2023. </li>
-                  <li>[Feb. 2023] Our paper <a href="https://arxiv.org/abs/2208.03610">BASES</a> is accepted to NeurIPS 2022 @ New Orleans. </li>
-                  <li>[Jun. 2022] Presenting our paper <a href="https://arxiv.org/abs/2203.15230">ZQA</a> at CVPR 2022 @ New Orleans.</li>
-                </ul>
-              </p>
-              
+            <div class='social-links'>
+              <a href='mailto:zikui@umd.edu' target='_blank' aria-label='Email'>
+                <img src="figs/icon-email.svg" alt="Email" width="22">
+              </a>
+              <a href='https://github.com/zikuicai' target='_blank' aria-label='GitHub'>
+                <img src="figs/icon-github.svg" alt="GitHub" width="24">
+              </a>
+              <a href='https://scholar.google.com/citations?user=-SrU69AAAAAJ&hl=en&oi=ao' target='_blank' aria-label='Google Scholar'>
+                <img src="figs/icon-google-scholar.svg" alt="Google Scholar" width="24">
+              </a>
+              <a href='https://x.com/ZikuiCai' target='_blank' aria-label='X'>
+                <img src="figs/icon-x.svg" alt="X" width="22">
+              </a>
+              <a href='https://www.linkedin.com/in/zikui-cai/' target='_blank' aria-label='LinkedIn'>
+                <img src="figs/icon-linkedin.svg" alt="LinkedIn" width="22">
+              </a>
             </div>
-          
-        </div>
-      </div>
+          </div>
 
-    </div>
+          <div class='bio'>
+            <p>
+              I am a postdoctoral associate at <a href="https://umd.edu/">University of Maryland, College Park</a> working with <a href="https://furong-huang.com/">Furong Huang</a> and <a href="https://www.cs.umd.edu/~tomg/">Tom Goldstein</a>.
+              I obtained my Ph.D. from <a href="https://www.ece.ucr.edu/">Electrical and Computer Engineering</a> at the <a href="https://www.ucr.edu/">University of California, Riverside</a>, under the guidance of <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>.
+              Originally from Wuhan, the "River City" of China, I completed my B.S. in Automation at <a href="http://english.whut.edu.cn/">Wuhan University of Technology</a>.
+            </p>
 
-    <footer class='c-footer'>
-      <div class='o-grid'>
-        <div class='o-grid__col o-grid__col--full'>
-    
-          <ul class='o-plain-list c-social-nav u-text-center'>
-            <li class='c-social-nav__item'>
-              <a href='mailto:zikui@umd.edu' target='_blank'>
-                <img src="figs/icon-email.svg", alt="Email", width="22">
-              </a>
-            </li>
-            &nbsp
-            <li class='c-social-nav__item'>
-              <a href='https://github.com/zikuicai' target='_blank'>
-                <img src="figs/icon-github.svg", alt="GitHub", width="24">
-              </a>
-            </li>
-            &nbsp
-            <li class='c-social-nav__item'>
-              <a href='https://scholar.google.com/citations?user=-SrU69AAAAAJ&hl=en&oi=ao' target='_blank'>
-                <img src="figs/icon-google-scholar.svg", alt="Google Scholar", width="24">
-              </a>
-            </li>
-            &nbsp
-            <li class='c-social-nav__item'>
-              <a href='https://dblp.org/pid/271/4562.html' target='_blank'>
-                <img src="figs/icon-dblp.svg", alt="DBLP", width="22">
-              </a>
-            </li>
-            &nbsp
-            <li class='c-social-nav__item'>
-              <a href='https://openreview.net/profile?id=~Zikui_Cai1' target='_blank'>
-                <img src="figs/icon-openreview.svg", alt="DBLP", width="20">
-              </a>
-            </li>
-          </ul>
-    
+            <p>
+              My research focuses on trustworthy machine learning, where I strive to identify vulnerabilities / limitations and enhance the trustworthiness (robustness, safety, privacy, and more) of machine learning systems.
+              Besides model level trustworthiness, I also build embodied and agentic systems that can reason, act, and adapt responsibly inside the physical environment.
+            </p>
+
+            <div class='research-interests'>
+              <h3>Research Interests</h3>
+              <ul>
+                <li>Multi-modal reasoning across vision, language, and action [ <a href="https://morse-500.github.io/">MORSE-500</a> ]</li>
+                <li>Building AI agents that plan, act, and self-improve</li>
+                <li>Embodied AI for navigation and manipulation in robotics</li>
+                <li>Agentic safety and alignment in multi-agent ecosystems [ <a href="https://arxiv.org/abs/2504.20965">AegisLLM</a> ]</li>
+                <li>Controllable and safe AI via model editing and unlearning [ <a href="https://github.com/CSIPlab/SLUG">SLUG</a>, <a href="https://arxiv.org/abs/2502.05209">Robust Eval</a> ]</li>
+                <li>Exposing model vulnerabilities via efficient blackbox attacks [ <a href="https://arxiv.org/abs/2208.03610">BASES</a>, <a href="https://arxiv.org/abs/2303.14304">EBAD</a>, <a href="https://arxiv.org/abs/2112.03223">Context-Aware-Attacks</a>, <a href="https://arxiv.org/abs/2203.15230">ZQA</a> ]</li>
+                <li>Detecting adversarial attacks using language models [ <a href="https://arxiv.org/abs/2108.08421">SCENE-Lang</a> ]</li>
+                <li>Enhancing user privacy via de-identification while preserving utility [ <a href="https://arxiv.org/abs/2303.13269">Disguise</a> ]</li>
+                <li>Improving physical modeling via end-to-end optimization [ <a href="https://arxiv.org/abs/2007.14621">Learn PR</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9506350">Learn CDI</a> ]</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class='news-section'>
+        <h2>News</h2>
+        <ul class='news-list'>
+          <li class='news-item'><span class='date'>[Jun. 2025]</span> Our paper on <a href="https://arxiv.org/abs/2505.22664">Efficient Training for VLM</a> has been accepted to ICCV 2025 @ Honolulu.</li>
+          <li class='news-item'><span class='date'>[Jun. 2025]</span> Our paper on <a href="https://arxiv.org/abs/2502.05209">Model Tampering Attack for Robust Evaluation</a> has been accepted to TMLR.</li>
+          <li class='news-item'><span class='date'>[May 2025]</span> Our paper SLUG on <a href="https://arxiv.org/abs/2407.11867">Efficient Unlearning</a> has been accepted to ICML 2025 @ Vancouver.</li>
+          <li class='news-item'><span class='date'>[Mar. 2025]</span> Our paper AegisLLM on <a href="https://arxiv.org/abs/2504.20965">Agentic System for Safety</a> has been accepted to ICLR 2025 BuildingTrust @ Singapore.</li>
+          <li class='news-item'><span class='date'>[Oct. 2024]</span> Our papers on <a href="https://arxiv.org/abs/2407.11867">Efficient</a> and <a href="https://arxiv.org/abs/2502.05209">Robust</a> Unlearning are accepted to NeurIPS 2024 SafeGenAI @ Vancouver.</li>
+          <li class='news-item'><span class='date'>[Sept. 2024]</span> Our paper on <a href="https://arxiv.org/abs/2406.02575">Cross-modality Safety Alignment</a> is accepted to EMNLP 2024 @ Miami.</li>
+          <li class='news-item'><span class='date'>[Jul. 2024]</span> Excited to join UMD <a href="https://www.umiacs.umd.edu/">UMIACS</a> as a postdoc, working on <a href="https://www.umiacs.umd.edu/about-us/news/umiacs-team-part-28m-darpa-award-advance-autonomous-robotics">Advanced Autonomous Robotics</a>.</li>
+          <li class='news-item'><span class='date'>[Dec 2023]</span> Our paper on <a href="https://arxiv.org/abs/2303.13269">Face De-identification</a> is accepted to AAAI 2024 @ Vancouver.</li>
+          <li class='news-item'><span class='date'>[May 2023]</span> Acknowledged as <a href="https://cvpr.thecvf.com/Conferences/2023/OutstandingReviewers">CVPR 2023 Outstanding Reviewer</a>.</li>
+          <li class='news-item'><span class='date'>[May 2023]</span> Recognized as Outstanding Teaching Assistant by ECE Graduate Division for 2023.</li>
+          <li class='news-item news-item-hidden'><span class='date'>[Apr. 2023]</span> Received Dissertation Year Program Fellowship 2023/2024.</li>
+          <li class='news-item news-item-hidden'><span class='date'>[Feb. 2023]</span> Our paper <a href="https://arxiv.org/abs/2303.14304">EBAD</a> is accepted to CVPR 2023 @ Vancouver.</li>
+          <li class='news-item news-item-hidden'><span class='date'>[Feb. 2023]</span> Received HEERF Dissertation Year Program Award 2022/2023.</li>
+          <li class='news-item news-item-hidden'><span class='date'>[Feb. 2023]</span> Our paper <a href="https://arxiv.org/abs/2208.03610">BASES</a> is accepted to NeurIPS 2022 @ New Orleans.</li>
+          <li class='news-item news-item-hidden'><span class='date'>[Jun. 2022]</span> Presenting our paper <a href="https://arxiv.org/abs/2203.15230">ZQA</a> at CVPR 2022 @ New Orleans.</li>
+        </ul>
+        <button class='expand-btn' id='newsExpandBtn' onclick='toggleNews()'>Show more</button>
+      </section>
+
+      <section class='publications-section'>
+        <h2>Selected Publications</h2>
+
+        <div class='publication'>
+          <div class='pub-title'>Targeted Unlearning with Single Layer Unlearning Gradient</div>
+          <div class='pub-authors'>Zikui Cai, Yaoteng Tan, M Salman Asif</div>
+          <div class='pub-venue'>ICML 2025 | NeurIPS 2024 SafeGenAI</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2406.02575">arXiv</a>
+            <a href="https://github.com/CSIPlab/SLUG">code</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>AegisLLM: Scaling Agentic Systems for Self-Reflective Defense in LLM Security</div>
+          <div class='pub-authors'>Zikui Cai, Shayan Shabihi, Bang An, Zora Che, Brian R. Bartoldson, Bhavya Kailkhura, Tom Goldstein, Furong Huang</div>
+          <div class='pub-venue'>ICLR 2025 BuildingTrust</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2504.20965">arXiv</a>
+            <a href="https://github.com/zikuicai/aegisllm">code</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Model Tampering Attacks Enable More Rigorous Evaluations of LLM Capabilities</div>
+          <div class='pub-authors'>Zora Che, Stephen Casper, Robert Kirk, et al.</div>
+          <div class='pub-venue'>NeurIPS 2024 SafeGenAI | TMLR 2025</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2502.05209">arXiv</a>
+            <a href="https://github.com/zorache/model-tampering-evals">code</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Can Textual Unlearning Solve Cross-Modality Safety Alignment?</div>
+          <div class='pub-authors'>Trishna Chakraborty, Erfan Shayegani, Zikui Cai, et al.</div>
+          <div class='pub-venue'>EMNLP 2024</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2406.02575">arXiv</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Disguise without Disruption: Utility-Preserving Face De-Identification</div>
+          <div class='pub-authors'>Zikui Cai, Zhongpai Gao, Benjamin Planche, Meng Zheng, Terrence Chen, M. Salman Asif, Ziyan Wu</div>
+          <div class='pub-venue'>AAAI 2024</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2303.13269">arXiv</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Ensemble-based Blackbox Attacks on Dense Prediction</div>
+          <div class='pub-authors'>Zikui Cai*, Yaoteng Tan*, M. Salman Asif</div>
+          <div class='pub-venue'>CVPR 2023</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2303.14304">arXiv</a>
+            <a href="https://github.com/CSIPlab/EBAD">code</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Blackbox Attacks via Surrogate Ensemble Search</div>
+          <div class='pub-authors'>Zikui Cai, Chengyu Song, Srikanth V. Krishnamurthy, Amit K. Roy-Chowdhury, M. Salman Asif</div>
+          <div class='pub-venue'>NeurIPS 2022</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2208.03610">arXiv</a>
+            <a href="https://github.com/CSIPlab/BASES">code</a>
+            <a href="https://github.com/CSIPlab/BASES/blob/main/doc/BASES-poster.pdf">poster</a>
+            <a href="https://github.com/CSIPlab/BASES/blob/main/doc/BASES-slides.pdf">slides</a>
+            <a href="https://neurips.cc/virtual/2022/poster/55270">talk</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Zero-Query Transfer Attacks on Context-Aware Object Detectors</div>
+          <div class='pub-authors'>Zikui Cai, Shantanu Rane, Alejandro E. Brito, et al.</div>
+          <div class='pub-venue'>CVPR 2022</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2203.15230">arXiv</a>
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Cai_Zero-Query_Transfer_Attacks_on_Context-Aware_Object_Detectors_CVPR_2022_paper.html">open access</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Context-Aware Transfer Attacks for Object Detection</div>
+          <div class='pub-authors'>Zikui Cai, Xinxin Xie, Shasha Li, et al.</div>
+          <div class='pub-venue'>AAAI 2022</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2112.03223">arXiv</a>
+            <a href="https://github.com/CSIPlab/context-aware-attacks">code</a>
+            <a href="https://github.com/CSIPlab/context-aware-attacks/blob/main/doc/slides.pdf">slides</a>
+            <a href="https://github.com/CSIPlab/context-aware-attacks/blob/main/doc/poster.pdf">poster</a>
+            <a href="https://aaai-2022.virtualchair.net/poster_aaai6996">talk</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Exploiting Multi-Object Relationships for Detecting Adversarial Attacks in Complex Scenes</div>
+          <div class='pub-authors'>Mingjun Yin, Shasha Li, Zikui Cai, et al.</div>
+          <div class='pub-venue'>ICCV 2021</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2108.08421">arXiv</a>
+            <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Yin_Exploiting_Multi-Object_Relationships_for_Detecting_Adversarial_Attacks_in_Complex_Scenes_ICCV_2021_paper.html">open access</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Data-Driven Illumination Patterns For Coded Diffraction Imaging</div>
+          <div class='pub-authors'>Zikui Cai, Rakib Hyder, M. Salman Asif</div>
+          <div class='pub-venue'>ICIP 2021</div>
+          <div class='pub-links'>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9506350">paper</a>
+          </div>
+        </div>
+
+        <div class='publication'>
+          <div class='pub-title'>Solving Phase Retrieval with a Learned Reference</div>
+          <div class='pub-authors'>Rakib Hyder*, Zikui Cai*, M. Salman Asif</div>
+          <div class='pub-venue'>ECCV 2020</div>
+          <div class='pub-links'>
+            <a href="https://arxiv.org/abs/2007.14621">arXiv</a>
+            <a href="https://github.com/CSIPlab/learn-reference-pr">code</a>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class='footer'>
+      <div class='footer-content'>
+        &copy; 2025 Zikui Cai
       </div>
     </footer>
 
   </div>
-</body>
 
+  <script>
+    function toggleNews() {
+      const hiddenItems = document.querySelectorAll('.news-item-hidden');
+      const btn = document.getElementById('newsExpandBtn');
+
+      hiddenItems.forEach(item => {
+        if (item.style.display === 'list-item') {
+          item.style.display = 'none';
+        } else {
+          item.style.display = 'list-item';
+        }
+      });
+
+      if (btn.textContent === 'Show more') {
+        btn.textContent = 'Show less';
+      } else {
+        btn.textContent = 'Show more';
+      }
+    }
+  </script>
+</body>
 </html>
