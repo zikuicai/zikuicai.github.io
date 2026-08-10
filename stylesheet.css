@@ -100,6 +100,10 @@ body {
   padding-left: 0;
 }
 
+.research-interest-group h4 {
+  font-size: 1em;
+}
+
 .research-interests li {
   padding-left: 20px;
   position: relative;
@@ -125,6 +129,12 @@ a {
 a:hover {
   color: #1a3f5f;
   text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
 }
 
 /* Social Links under profile */
@@ -193,7 +203,7 @@ a:hover {
 }
 
 /* Hide extra news items by default */
-.news-item-hidden {
+.news-item-hidden[hidden] {
   display: none;
 }
 
@@ -400,5 +410,14 @@ a:hover {
 
   .news-list .date {
     background-color: #666;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
